@@ -1,2 +1,0 @@
-const e=document.querySelector("form.feedback-form"),a=localStorage.getItem("feedback-form-state");if(a){const t=JSON.parse(a);e.elements.email.value=t.email,e.elements.message.value=t.message}e.addEventListener("input",(a=>{const t={email:e.elements.email.value,message:e.elements.message.value};localStorage.setItem("feedback-form-state",JSON.stringify(t))})),e.addEventListener("submit",(a=>{a.preventDefault(),console.log({email:e.elements.email.value,message:e.elements.message.value}),localStorage.clear(),e.reset()}));
-//# sourceMappingURL=03-feedback.d465d295.js.map
